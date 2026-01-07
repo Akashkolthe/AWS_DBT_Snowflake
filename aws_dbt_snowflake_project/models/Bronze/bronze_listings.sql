@@ -5,4 +5,4 @@ SELECT * FROM {{ source('staging', 'listings') }}
     WHERE CREATED_AT > 
     (SELECT COALESCE(MAX(created_at), '1900-01-01')
      FROM {{ this }})
-{% endif %} 
+{% endif %}
