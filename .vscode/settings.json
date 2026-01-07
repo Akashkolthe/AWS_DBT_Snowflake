@@ -1,0 +1,15 @@
+{
+    "dbt.enableNewLineagePanel": true,
+    "dbt.perspectiveTheme": "Pro Dark",
+    "files.associations": {
+        "*.sql": "jinja-sql"
+    },
+    "dbt.dbtProjectConfigs": [
+        {
+            "projectPath": "aws_dbt_snowflake_project",
+            "name": "aws_dbt_snowflake_project"
+        }
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe"
+}

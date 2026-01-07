@@ -1,7 +1,4 @@
 
-# Name your project! Project names should contain only lowercase characters
-# and underscores. A good package name should reflect your organization's
-# name or the intended use of these models
 name: 'aws_dbt_snowflake_project'
 version: '1.0.0'
 
@@ -25,5 +22,17 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   aws_dbt_snowflake_project:
-    demo:
+    Bronze:
       +materialized: table
+      +schema: bronze  
+    Silver:
+      +materialized: table
+      +schema: silver
+    Gold:
+      +materialized: table
+      +schema: gold
+      ephemeral:
+        +materialized: ephemeral
+        +schema: ephemeral
+
+  
