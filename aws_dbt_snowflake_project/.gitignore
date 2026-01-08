@@ -1,4 +1,1 @@
-
-target/
-dbt_packages/
-logs/
+# Project-specific ignores are handled in the root .gitignore

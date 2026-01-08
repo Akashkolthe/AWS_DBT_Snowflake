@@ -8,7 +8,25 @@ wheels/
 
 # Virtual environments
 .venv
+env/
+venv/
+ENV/
 
 # IDE and Logs
 .vscode/
+.idea/
+*.swp
+*.swo
 logs/
+*.log
+
+# dbt specific
+target/
+dbt_packages/
+dbt_modules/
+profiles.yml
+.user.yml
+
+# OS generated files
+.DS_Store
+Thumbs.db
